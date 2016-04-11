@@ -1,0 +1,8 @@
+---
+layout: post
+title: 中文测试
+tags: jekyll 测试
+summary: 这个一个中文测试文件
+---
+
+这是一个文测试文件，文件名包含中文字符，标签也 包含中文标签，并且summary是中文的。

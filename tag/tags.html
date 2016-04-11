@@ -1,0 +1,15 @@
+---
+layout: default
+title: Archive
+---
+
+<h2 class="post_title">All Tags</h2> <a href="{{ baseurl }}/blog/index.html">All Posts</a>
+<div class="bundle row gutters fadeInDown animated">
+<ul>
+{% for tag in site.tags %}
+<li>
+<a class="tag" href= "{{ site.baseurl }}/tag/{{ tag[0] }}"> {{ tag[0] }} ({{tag[1]|size}}) </a>
+</li>
+{% endfor %}
+</ul>
+</div>

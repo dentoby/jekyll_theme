@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<article class="single row gutters">
+  <h2>{{ page.title }}</h2>
+  <div class="post_properties">
+  <span class="post_property"> Posted on: <time class="published" datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date_to_long_string }} </time> </span> 
+  {% unless page.tags == empty %}
+  <span class="post_property"> Tags: 
+  {% for tag in page.tags %}
+  <a class="tag" href="tag/{{ tag }}">{{ tag }}</a>
+  {% endfor %}
+  </span>
+  {% endunless %}
+  </div>
+
+  {{ content }}
+</article>
